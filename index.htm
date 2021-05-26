@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+<title>Bootstrap Example</title>
+<meta charset=”utf-8″>
+<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+<link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css”>
+<script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>
+<script type=”text/javascript”>
+$(function() {
+var loc = window.location.toString(),
+params = loc.split(‘&’)[1],
+params2 = loc.split(‘&’)[2],
+params3 = loc.split(‘&’)[3],
+params4 = loc.split(‘&’)[4],
+params5 = loc.split(‘&’)[5],
+// params6 = loc.split(‘&’)[6],
+iframe = document.getElementById(‘myIframe’);
+// alert(iframe.src);
+iframe.src = iframe.src + ‘?’ + params + ‘&’ + params2 + ‘&’ + params3 + ‘&’ + params4;
+// alert(iframe.src);
+});
+</script>
+</head>
+
+<body>
+<iframe name=”leadsquared_landing_page_frame” src=”https://programs.productleadership.com/career-insight-form-2020″ width=”600″ height=”620″ frameborder=”0″ marginwidth=”0″ marginheight=”0″ scrolling=”no” id=”myIframe”></iframe>
+</body>
+
+</html>
